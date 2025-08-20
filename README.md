@@ -1,27 +1,27 @@
-# Atliq-Hardware-Sales-Insights (SQL + Power BI)
-
+#  Atliq Hardware Sales Insights (Power BI)
 
 ##  Project Overview
-This is a **self-initiated data analytics project** where I analyzed Atliq Hardware’s sales and profitability data using **SQL** and **Power BI**.  
+This is a **self-initiated data analytics project** where I analyzed Atliq Hardware’s sales and profitability data using **Power BI**.  
 The goal was to build an **end-to-end BI solution** for revenue tracking, customer analysis, and profitability insights.  
+(Data source: `db_dump.sql` was imported into Power BI, cleaned, and modeled using Power Query & DAX.)
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ##  Objectives
-- Build a sales dashboard to analyze **revenue, sales quantity, and profit margins**.  
+- Build a Power BI dashboard to analyze **revenue, sales quantity, and profit margins**.  
 - Identify top-performing **markets, products, and customers**.  
 - Highlight **loss-making regions** and **profit margin contributors**.  
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ##  Methodology
-- Used **MySQL** to query raw sales data (~1M+ transactions across 5 tables).  
-- Applied data cleaning & transformation in **Power Query** (currency normalization using `norm_amount`).  
-- Built **data model (star schema)** in Power BI with fact & dimension tables.  
-- Created **DAX measures** for revenue, profit margin, YoY growth, and contribution %.  
-- Designed an interactive dashboard with filters (year, quarter, market).  
+- Imported sales data (from `db_dump.sql`) into **Power BI**.  
+- Applied data cleaning & transformation in **Power Query** (e.g., currency normalization, handling missing values).  
+- Modeled data into a **star schema** with fact & dimension tables.  
+- Created **DAX measures** for revenue, profit margin %, YoY growth, and contribution %.  
+- Designed a 3-page interactive dashboard with filters (year, quarter, market).  
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ##  Dashboard Highlights
 - **KPIs:** 984.87M Revenue | 2M Sales Quantity | 24.66M Profit Margin  
@@ -30,7 +30,8 @@ The goal was to build an **end-to-end BI solution** for revenue tracking, custom
 - **Brick & Mortar vs E-Commerce:** Contribution comparison.  
 - **Profitability Analysis:** Revenue vs Profit Margin %, forecast vs actual target.  
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
+##  Repository Structure
 
 
